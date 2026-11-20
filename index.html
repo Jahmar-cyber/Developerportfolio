@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cedric Herron | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h2 class="logo">CH<span>.</span></h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <p class="intro">HELLO, WORLD! I'M</p>
+
+        <h1>Cedric Herron</h1>
+
+        <h2>Software Developer in Progress</h2>
+
+        <p>
+            Building technology, solving problems,
+            and creating software that makes a difference.
+        </p>
+
+        <a href="#projects" class="btn">Explore My Work</a>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a software development professional
+            developing my skills in programming,
+            database management, and application development.
+
+            My interests include enterprise software,
+            web development, and cloud technology.
+        </p>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">C#</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">RPGLE</div>
+            <div class="skill-card">Git</div>
+
+        </div>
+
+    </section>
+
+    
+<!-- PROJECT MANAGER -->
+
+
+<section id="projects" class="container">
+
+    <h2>My Project Manager</h2>
+
+    <p>Manage my software development projects.</p>
+
+    <div class="project-card">
+
+        <h3 id="formTitle">Add a New Project</h3>
+
+        <input
+            type="text"
+            id="projectName"
+            placeholder="Project name"
+        >
+
+        <input
+            type="text"
+            id="projectLanguage"
+            placeholder="Programming language"
+        >
+
+        <select id="projectStatus">
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Planned">Planned</option>
+        </select>
+
+        <button type="button" id="saveProjectButton"
+            onclick="addProject()">
+            Add Project
+        </button>
+
+        <button type="button" id="cancelEditButton"
+            onclick="cancelEdit()" hidden>
+            Cancel
+        </button>
+
+    </div>
+
+    <h3 class="project-heading">My Projects</h3>
+
+    <div id="projectList" class="projects-grid"></div>
+
+</section>
+
+
+
+
+<!-- Calculator Application -->
+<section id="calculator" class="container">
+
+    <h2>JavaScript Calculator</h2>
+
+    <div class="project-card">
+
+        <input type="number" id="num1" placeholder="First number">
+
+        <br><br>
+
+        <input type="number" id="num2" placeholder="Second number">
+
+        <br><br>
+
+        <button onclick="calculate('add')">Add +</button>
+
+        <button onclick="calculate('subtract')">Subtract -</button>
+
+        <button onclick="calculate('multiply')">Multiply *</button>
+
+        <button onclick="calculate('divide')">Divide /</button>
+
+        <h3 id="result">Result: </h3>
+
+    </div>
+
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Interested in technology, software development,
+            and building innovative solutions?
+        </p>
+
+        <a href="mailto:CJHERRON85@GMAIL.com" class="btn">
+            Contact Me
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cedric Herron | Developer Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

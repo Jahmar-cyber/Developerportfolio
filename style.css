@@ -1,0 +1,296 @@
+
+
+/* GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #1e293b;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    min-height: 480px;
+}
+
+.intro {
+    color: #38bdf8;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0369a1;
+    transform: translateY(-3px);
+}
+
+/* CONTENT SECTIONS */
+
+.container {
+    padding: 80px 10%;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+/* SKILLS GRID */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #1e293b;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: #0369a1;
+    transform: translateY(-5px);
+}
+
+/* PROJECT GRID */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card span {
+    display: block;
+    margin-top: 20px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #1e293b;
+    padding: 25px;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* CALCULATOR */
+
+#calculator input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#calculator button {
+    margin: 5px;
+}
+
+#result {
+    margin-top: 20px;
+    color: #38bdf8;
+}
+
+
+/* PROJECT MANAGER */
+
+#projectName,
+#projectLanguage {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.project-heading {
+    margin: 30px 0 15px;
+    color: #38bdf8;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+.project-card button {
+    margin-top: 10px;
+}
+
+.project-status {
+    display: inline-block;
+    color: #38bdf8;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+/* CRUD APPLICATION CONTROLS */
+
+#projectName,
+#projectLanguage,
+#projectStatus {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.edit-button {
+    background: #0284c7;
+}
+
+.delete-button {
+    background: #dc2626;
+}
+
+#cancelEditButton {
+    background: #64748b;
+}
+
+#cancelEditButton[hidden] {
+    display: none;
+}
